@@ -1,0 +1,22 @@
+[09:50:53 INF] Now listening on: http://[::]:80
+[09:50:53 INF] Application started. Press Ctrl+C to shut down.
+[09:50:53 INF] Hosting environment: Development
+[09:50:53 INF] Content root path: /app
+[09:59:10 INF] Request starting HTTP/1.1 GET http://host.docker.internal:8000/swagger/index.html - -
+[09:59:10 INF] Request finished HTTP/1.1 GET http://host.docker.internal:8000/swagger/index.html - - - 200 - text/html;charset=utf-8 97.1856ms
+[09:59:10 INF] Request starting HTTP/1.1 GET http://host.docker.internal:8000/swagger/v1/swagger.json - -
+[09:59:10 INF] Request finished HTTP/1.1 GET http://host.docker.internal:8000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 76.5027ms
+[09:59:17 INF] Request starting HTTP/1.1 GET http://host.docker.internal:8000/api/v1/Catalog - -
+[09:59:17 INF] Executing endpoint 'Catalog.API.Controllers.CatalogController.GetProducts (Catalog.API)'
+[09:59:17 INF] Route matched with {action = "GetProducts", controller = "Catalog"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Catalog.API.Entities.Product]]] GetProducts() on controller Catalog.API.Controllers.CatalogController (Catalog.API).
+[09:59:17 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Catalog.API.Entities.Product, Catalog.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[09:59:17 INF] Executed action Catalog.API.Controllers.CatalogController.GetProducts (Catalog.API) in 387.3583ms
+[09:59:17 INF] Executed endpoint 'Catalog.API.Controllers.CatalogController.GetProducts (Catalog.API)'
+[09:59:17 INF] Request finished HTTP/1.1 GET http://host.docker.internal:8000/api/v1/Catalog - - - 200 - application/json;+charset=utf-8 454.6623ms
+[10:00:55 INF] Request starting HTTP/1.1 GET http://catalog.api/api/v1/Catalog - 0
+[10:00:55 INF] Executing endpoint 'Catalog.API.Controllers.CatalogController.GetProducts (Catalog.API)'
+[10:00:55 INF] Route matched with {action = "GetProducts", controller = "Catalog"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Catalog.API.Entities.Product]]] GetProducts() on controller Catalog.API.Controllers.CatalogController (Catalog.API).
+[10:00:55 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Catalog.API.Entities.Product, Catalog.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[10:00:55 INF] Executed action Catalog.API.Controllers.CatalogController.GetProducts (Catalog.API) in 10.0489ms
+[10:00:55 INF] Executed endpoint 'Catalog.API.Controllers.CatalogController.GetProducts (Catalog.API)'
+[10:00:55 INF] Request finished HTTP/1.1 GET http://catalog.api/api/v1/Catalog - 0 - 200 - application/json;+charset=utf-8 16.8523ms
