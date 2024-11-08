@@ -29,7 +29,7 @@ docker-compose -f docker-compose.yml -f docker-compose.override.yml down
 ```
 Note --> to build and run containers use:
 ```csharp
-docker-compose -f docker-compose.yml -f docker-compose.override.yml --build
+docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build
 ```
 3. Wait for docker compose all microservices.
 
